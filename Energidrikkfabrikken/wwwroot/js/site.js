@@ -6,7 +6,7 @@
 const navLinksEl = document.getElementById("navLinks");
 const navBurgerEl = document.getElementById("navBurger");
 
-var isNavLinksOpen = false;
+let isNavLinksOpen = false;
 
 function toggleNavLinks() {
     if(navLinksEl.style.display == "none") {
@@ -31,3 +31,19 @@ function checkWindowWidth() {
 checkWindowWidth();
 
 window.onresize = checkWindowWidth;
+
+const navbarEl = document.getElementById("navbar");
+
+function checkScrollPosition() {
+    if(window.scrollY == 0) {
+        navbarEl.style.backgroundColor = "transparent";
+        navbarEl.style.boxShadow = "none"
+    } else {
+        navbarEl.style.backgroundColor = "#B6D4F4";
+        navbarEl.style.boxShadow = "rgba(0, 0, 0, 0.08) 0px 4px 12px;"
+    }
+}
+
+checkScrollPosition()
+
+window.onscroll = checkScrollPosition;

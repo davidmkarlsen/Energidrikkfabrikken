@@ -7,17 +7,40 @@
     <projectFile profileName="https">Energidrikkfabrikken/Energidrikkfabrikken.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe66eca-a48f-4fd4-99b7-365d4843b97d" name="Changes" comment="Lagde riktig MVC prosjekt">
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/burger-ikon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/email-ikon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/energidrikk-ikon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/energidrikkfabrikken-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/hjem-ikon.svg" afterDir="false" />
+    <list default="true" id="abe66eca-a48f-4fd4-99b7-365d4843b97d" name="Changes" comment="Lagt til egen css, og endret på navbar">
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/images/carousel-img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/images/carousel-img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/images/carousel-img3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/images/carousel-img4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/images/energy-group.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/candy-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/left-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/no-sugar-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/pulse-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/right-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Energidrikkfabrikken/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Energidrikkfabrikken/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/js/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/burger-ikon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/burger-ikon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/email-ikon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/email-ikon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/energidrikk-ikon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/energidrikk-ikon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/energidrikkfabrikken-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/energidrikkfabrikken-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/hjem-ikon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/hjem-ikon.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Energidrikkfabrikken/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,6 +63,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "CSS",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   },
@@ -122,7 +146,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684825676068</updated>
-      <workItem from="1684825678186" duration="11589000" />
+      <workItem from="1684825678186" duration="23417000" />
     </task>
     <task id="LOCAL-00001" summary="Lagde riktig MVC prosjekt">
       <created>1684827090213</created>
@@ -131,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684827090213</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lagt til egen css, og endret på navbar">
+      <created>1684925064756</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684925064756</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +211,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Lagde riktig MVC prosjekt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagde riktig MVC prosjekt" />
+    <MESSAGE value="Lagt til egen css, og endret på navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagt til egen css, og endret på navbar" />
   </component>
 </project>
