@@ -1,0 +1,165 @@
+:root {
+  --text-color: #05366C;
+  --primary-color: #298FFE;
+  --secondary-color: #FE705A;
+  --light-blue: #F4F9FF;
+  --light-peach: #FFDCDC;
+  --white: #FFFFFF;
+  --secondary-blue: #54A1F5;
+  
+  --max-width: 1200px;
+  --min-width: 300px;
+  
+  --global-padding: 1em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: var(--text-color);
+  position: relative;
+  min-height: 100%;
+  min-width: var(--min-width);
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.navbar {
+  display: flex;
+  background-color: var(--primary-color);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+.nav--container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.nav--home-icon {
+  padding: 1em
+}
+
+.nav--home-icon img {
+  width: 8rem
+}
+
+.nav--burger {
+  position: absolute;
+  right: 1em;
+  top: 1.1em;
+  display: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  border: none;
+}
+
+.nav--burger img {
+  width: 2rem;
+}
+
+.nav--links {
+  width: 100%;
+  background-color: var(--secondary-blue);
+}
+
+.nav--links--list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+.nav--links--list--item {
+  text-decoration: none;
+  display: flex;
+  gap: 0.5em;
+  padding: 0.75em 1em;
+}
+
+.nav--links--list--item img {
+  width: 1.4rem;
+}
+
+.nav--links--list--item a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+.body-content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: var(--global-padding);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: var(--global-padding);
+}
+
+.footer--container {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+  .navbar {
+    padding: 0.5em 0;
+  }
+
+  .nav--links--list {
+    display: flex;
+    gap: 0.5em;
+    padding: 0;
+  }
+
+  body {
+    margin: auto;
+  }
+
+  .nav--links {
+    background-color: transparent;
+    width: auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}

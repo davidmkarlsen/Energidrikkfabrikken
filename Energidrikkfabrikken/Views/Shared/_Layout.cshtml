@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - Energidrikkfabrikken</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/Energidrikkfabrikken.styles.css" asp-append-version="true"/>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="nav--container">
+            <a class="nav--home-icon" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="svg/energidrikkfabrikken-logo.svg" alt="energidrikkfabrikken_logo"/>
+            </a>
+            <button class="nav--burger" type="button" onclick="toggleNavLinks()" id="navBurger" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <img src="svg/burger-ikon.svg" alt="burger_ikon">
+            </button>
+            <div class="nav--links" id="navLinks">
+                <ul class="nav--links--list">
+                    <li class="nav--links--list--item">
+                        <img src="svg/hjem-ikon.svg" alt="hjem_ikon"/>
+                        <a class="" asp-area="" asp-controller="Home" asp-action="Index">Hjem</a>
+                    </li>
+                    <li class="nav--links--list--item">
+                        <img src="svg/email-ikon.svg" alt="email_ikon"/>
+                        <a class="" asp-area="" asp-controller="Home" asp-action="Privacy">Kontakt oss</a>
+                    </li>
+                    <li class="nav--links--list--item">
+                        <img src="svg/energidrikk-ikon.svg" alt="energidrikk_ikon"/>
+                        <a class="" asp-area="" asp-controller="Home" asp-action="Privacy">Våre energidrikker</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="body-content">
+    <main role="main" class="">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="footer--container">
+        &copy; 2023 - Energidrikkfabrikken - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+</footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
