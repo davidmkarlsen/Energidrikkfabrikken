@@ -8,24 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abe66eca-a48f-4fd4-99b7-365d4843b97d" name="Changes" comment="Lagt til mye på homepage og stilsatt en del">
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Models/Category.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/facebook-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/instagram-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/left-icon-white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/right-icon-white.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/twitter-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Models/ContactInput.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Models/EnergyIngredientViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Models/Energydrink.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Models/Ingredient.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Energidrikkfabrikken/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Energidrikkfabrikken/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Energidrikkfabrikken.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Energidrikkfabrikken.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Models/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Models/Category.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/js/site.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/left-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/left-icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/right-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/right-icon.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +29,21 @@
       </list>
     </option>
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7839fa73-0a9c-45eb-92fb-408f68dfeac1" />
+        <option name="url" value="https://github.com/davidmkarlsen/Energidrikkfabrikken.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Energidrikkfabrikken/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/David/RiderProjects/Energidrikkfabrikken/Energidrikkfabrikken/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,7 +70,8 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "postgresql"
+      "postgresql",
+      "sqlserver"
     ],
     "rider.external.source.directories": [
       "C:\\Users\\David\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",

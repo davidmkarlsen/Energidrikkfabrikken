@@ -4,7 +4,10 @@ namespace Energidrikkfabrikken.Models;
 
 public class Category
 {
-    public int Id { get; set; }
+    public int CategoryId { get; set; }
+    
     [Required]
     public string Name { get; set; }
+    
+    public ICollection<Energydrink> Energydrinks { get; set; }
 }
