@@ -103,8 +103,8 @@
 .lower-section {
     display: grid;
     grid-template-columns: auto;
-    gap: 2em;
-    margin: 5em -1em;
+    gap: 1.5em;
+    margin: 6em -1em;
 }
 
 .about-wrapper {
@@ -129,19 +129,29 @@
 
 .socials-wrapper {
     display: flex;
-    gap: 1em
+    gap: 1em;
+    margin-top: 1em;
 }
 
-.social  {
-    width: 3rem;
-    height: 3rem;
+.social-btn  {
+    width: 3.5rem;
+    height: 3.5rem;
     background-color: var(--primary-color);
     border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-btn img {
+    object-fit: contain;
+    width: 1.5rem;
 }
 
 .lower-section--btn {
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: var(--text-color);
     border: none;
     padding: 1em;
     display: flex;
@@ -149,15 +159,21 @@
     justify-content: space-between;
     position: relative;
     height: 5rem;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 600;
     border-radius: 0.3rem;
     margin: 0 1em;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.lower-section--btn--title {
+    text-align: left;
+    width: 10rem;
 }
 
 .lower-section--btn img {
-    
-    
+    width: 1.4rem;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -178,12 +194,16 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    .home-container {
+        margin-top: 3em;
+    }
+    
     .carousel img {
         width: calc(96% / 3)
     }
 
     .mid-section {
-        margin-top: 6em;
+        margin-top: 8em;
         gap: 0;
     }
 
@@ -204,15 +224,34 @@
             "left btn2";
         gap: 2%;
         row-gap: 1.75em;
+        margin: 8em 0;
     }
     
     .about-wrapper {
         grid-area: left;
+        padding: 2em 3em 2em 2em;
+        border-radius: 0.3rem;
+    }
+
+    .about-wrapper h1{
+        margin: 0;
+    }
+    
+    .about-and-socials-wrapper p {
+        margin-top: 2em;
+    }
+    
+    .social-btn {
+        width: 3rem;
+        height: 3rem;
     }
 
     .lower-section--btn {
         margin: 0;
         height: 100%;
+    }
+
+    .lower-section--btn--title, .lower-section--btn--icon {
     }
     
     .lower-section--btn:first-of-type {
@@ -232,6 +271,20 @@
 
     .features-wrapper {
         width: 45%
+    }
+    
+    .about-wrapper {
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .about-and-socials-wrapper {
+        padding-left: 2em;
+        border-left: 1px #CFDDED solid;
+    }
+
+    .about-and-socials-wrapper p {
+        margin-top: 0.5em;
     }
 }
 

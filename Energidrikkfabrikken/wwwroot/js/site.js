@@ -16,6 +16,8 @@ function toggleNavLinks() {
         navLinksEl.style.display = "none";
         isNavLinksOpen = false;
     }
+
+    checkScrollPosition()
 }
 
 function checkWindowWidth() {
@@ -35,11 +37,11 @@ window.onresize = checkWindowWidth;
 const navbarEl = document.getElementById("navbar");
 
 function checkScrollPosition() {
-    if(window.scrollY == 0) {
+    if(window.scrollY == 0 && !isNavLinksOpen) {
         navbarEl.style.backgroundColor = "transparent";
         navbarEl.style.boxShadow = "none"
     } else {
-        navbarEl.style.backgroundColor = "#B6D4F4";
+        navbarEl.style.backgroundColor = "#FFFFFF";
         navbarEl.style.boxShadow = "rgba(0, 0, 0, 0.08) 0px 4px 12px;"
     }
 }

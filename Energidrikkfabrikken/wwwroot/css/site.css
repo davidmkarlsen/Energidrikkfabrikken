@@ -27,9 +27,24 @@ html {
   background: radial-gradient(290.68% 290.68% at 50% -46.14%, #FFFFFF 0%, #227DDF 92.39%);
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+button {
+  cursor: pointer;
+  transition: transform 1000ms, filter 500ms;
+}
+
+button:hover, button:focus-visible {
+  filter: brightness(115%);
+  transform: translateY(-0.3rem);
+  transition: transform 250ms, filter 250ms;
 }
 
 .navbar {
@@ -93,6 +108,15 @@ html {
   display: flex;
   gap: 0.5em;
   padding: 0.75em 1em;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 500ms, filter 300ms;
+}
+
+.nav--links--list--item:hover, .nav--links--list--item:focus-visible {
+  filter: brightness(150%);
+  transform: translateY(-0.2rem);
+  transition: transform 150ms, filter 150ms;
 }
 
 .nav--links--list--item img {
@@ -120,6 +144,7 @@ body {
   bottom: 0;
   left: 0;
   padding: var(--global-padding);
+  background-color: var(--secondary-blue);
 }
 
 .footer--container {
