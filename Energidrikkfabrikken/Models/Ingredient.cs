@@ -8,4 +8,6 @@ public class Ingredient
     
     [Required]
     public string Name { get; set; }
+    
+    public ICollection<EnergyIngredientVm> EnergyIngredients { get; set; }
 }

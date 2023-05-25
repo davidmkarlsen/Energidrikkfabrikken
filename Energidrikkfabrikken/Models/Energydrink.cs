@@ -24,5 +24,10 @@ public class Energydrink
     [Required]
     public bool IsSugarFree { get; set; }
     
-    public ICollection<Ingredient> Ingredients { get; set; }
+    [Required]
+    public int TotalKcalPer100Ml { get; set; }
+    
+    public ICollection<EnergyIngredientVm> EnergyIngredients { get; set; }
+    
+    public string? ImageURL { get; set; }
 }

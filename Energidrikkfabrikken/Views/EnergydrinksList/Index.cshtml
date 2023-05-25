@@ -1,0 +1,12 @@
+@model List<Energydrink>
+
+<div>
+    <h1>Våre energidrikker</h1>
+    @foreach (var obj in Model)
+    {
+        <div>
+            <h2>@obj.Name</h2>
+        </div>
+    }
+    <h2>Yo</h2>
+</div>
