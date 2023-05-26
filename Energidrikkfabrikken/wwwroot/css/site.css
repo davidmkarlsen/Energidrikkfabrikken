@@ -25,6 +25,7 @@ html {
   min-height: 100%;
   min-width: var(--min-width);
   background: radial-gradient(290.68% 290.68% at 50% -46.14%, #FFFFFF 0%, #227DDF 92.39%);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -80,7 +81,6 @@ button:hover, button:focus-visible {
   position: absolute;
   right: 1em;
   top: 1.2em;
-  display: none;
   background-color: transparent;
   display: flex;
   align-items: center;  
@@ -137,24 +137,52 @@ button:hover, button:focus-visible {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 .body-content {
-  margin: 4em auto;
+  margin: 4em auto 0 auto;
   max-width: var(--max-width);
-  padding: var(--global-padding);
+  padding: var(--global-padding) var(--global-padding) 5em var(--global-padding);
+  overflow: hidden;
 }
 
 
 .footer {
-  padding: 2em var(--global-padding);
+  padding: 3em var(--global-padding);
   background-color: var(--secondary-blue);
+  min-height: 20vh;
 }
 
 .footer--container {
   display: flex;
   max-width: var(--max-width);
   margin: auto;
+}
+
+.background-splash1 {
+  animation: 0.5s noDisplay, 0.5s ease-in-out fadeIn reverse 0.5s;
+  background: url("../images/water-splash1.png") no-repeat;
+  background-size: contain;
+  width: 30rem;
+  height: 20rem;
+  position: absolute;
+  top: 5rem;
+  left: -18rem;
+  z-index: -1;
+}
+
+.background-splash2 {
+  animation: 0.5s noDisplay, 0.5s ease-in-out fadeIn reverse 0.5s;
+  background: url("../images/water-splash1.png") no-repeat;
+  background-size: contain;
+  background-position-x: 23rem;
+  width: 30rem;
+  height: 20rem;
+  position: absolute;
+  top: 60rem;
+  right: 0rem;
+  z-index: -1;
 }
 
 
@@ -171,7 +199,8 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .body-content {
-    margin: 5em auto;
+    margin: 5em auto 0 auto;
+    padding: var(--global-padding) var(--global-padding) 15em var(--global-padding);
   }
   
   .navbar {
@@ -190,14 +219,20 @@ body {
     padding: 1em;
     gap: 0.3em;
   }
-  
-  .body-content {
-    margin: 5rem auto;
-  }
 
   .nav--links {
     background-color: transparent;
     width: auto;
+  }
+
+  .background-splash1 {
+    top: 10rem;
+    left: -17rem;
+  }
+
+  .background-splash2 {
+    top: 50rem;
+    background-position-x: 20rem;
   }
 }
 
@@ -209,4 +244,30 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+    transform: translateY(1rem);
+    filter: opacity(0);
+  }
+
+  80% {
+    transform: translateY(-0.1rem);
+  }
+
+  100% {
+    transform: translateY(0);
+    filter: opacity(1);
+  }
+}
+
+@keyframes fadeIn {
+  to { filter: opacity(0);}
+  from { filter: opacity(1);}
+}
+
+@keyframes noDisplay {
+  to { filter: opacity(0);}
+  from { filter: opacity(0);}
 }

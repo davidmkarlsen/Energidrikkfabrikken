@@ -7,73 +7,20 @@
     <projectFile profileName="https">Energidrikkfabrikken/Energidrikkfabrikken.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe66eca-a48f-4fd4-99b7-365d4843b97d" name="Changes" comment="Lagt til info i databasen og får vist det i liste over energidrikker">
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Controllers/EnergydrinkController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Energydrink/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/energydrink.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/energydrinksList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/images/energy-pattern.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/images/energylist-banner-back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/images/zoaboost.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/images/zoafersken.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/images/zoasitron.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/timer-icon.svg" afterDir="false" />
+    <list default="true" id="abe66eca-a48f-4fd4-99b7-365d4843b97d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Controllers/ContactController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Contact/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/contact.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/hello-icon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Energidrikkfabrikken/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Energidrikkfabrikken/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/config/applicationhost.config" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Controllers/EnergydrinksListController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Controllers/EnergydrinksListController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Energidrikkfabrikken.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Energidrikkfabrikken.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Models/ContactInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Models/ContactInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Views/EnergydrinksList/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/EnergydrinksList/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Home/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Shared/_Layout.cshtml.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/energydrink.css" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/energydrink.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/energydrinksList.css" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/energydrinksList.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/images/energy-group.png" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/images/energy-group.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +50,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Energidrikkfabrikken/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/David/Desktop/dev/Energidrikkfabrikken/Energidrikkfabrikken/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -213,7 +161,7 @@
       <workItem from="1684825678186" duration="34113000" />
       <workItem from="1685029037084" duration="532000" />
       <workItem from="1685031943574" duration="23557000" />
-      <workItem from="1685083007449" duration="9216000" />
+      <workItem from="1685083007449" duration="32863000" />
     </task>
     <task id="LOCAL-00001" summary="Lagde riktig MVC prosjekt">
       <created>1684827090213</created>
@@ -248,7 +196,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1685022639723</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Endret mye på css, og fått en produktside for hver energidrikk">
+      <created>1685094731926</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1685094731926</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +255,7 @@
     <MESSAGE value="Lagt til mye på homepage og stilsatt en del" />
     <MESSAGE value="Lagt til modellene som skal brukes" />
     <MESSAGE value="Lagt til info i databasen og får vist det i liste over energidrikker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagt til info i databasen og får vist det i liste over energidrikker" />
+    <MESSAGE value="Endret mye på css, og fått en produktside for hver energidrikk" />
+    <option name="LAST_COMMIT_MESSAGE" value="Endret mye på css, og fått en produktside for hver energidrikk" />
   </component>
 </project>

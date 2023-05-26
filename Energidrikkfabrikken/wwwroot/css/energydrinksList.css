@@ -10,12 +10,14 @@
 }
 
 .energylist-top-banner--title {
+    animation: 0.5s ease-in-out fadeInFromBottom;
     font-size: 1.8rem;
     font-weight: 600;
     margin-top: 1em;
 }
 
 .energylist-top-banner--info {
+    animation: 0.5s ease-in-out fadeInFromBottom;
     line-height: 1.5;
     max-width: 50rem;
 }
@@ -31,6 +33,7 @@
 }
 
 .energylist-item {
+    animation: 0.1s noDisplay, 0.5s ease-in-out fadeInFromBottom 0.1s;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -82,6 +85,7 @@
 }
 
 .coming-soon-wrapper {
+    animation: 0.2s noDisplay, 0.5s ease-in-out fadeInFromBottom 0.2s;
     padding: 6em 3em;
     width: 100%;
     height: 100%;
@@ -116,6 +120,16 @@
     right: 1em;
     color: var(--white);
     font-weight: 500;
+}
+
+.background-splash1-energydrinkslist {
+    top: 140rem;
+    left: -18rem;
+}
+
+.background-splash2-energydrinkslist {
+    top: 45rem;
+    background-position-x: 23rem;
 }
 
 
@@ -161,6 +175,16 @@
 
     .coming-soon-wrapper--btn {
         padding: 0.8em;
+    }
+
+    .background-splash1-energydrinkslist {
+        top: 40rem;
+        left: -17rem;
+    }
+
+    .background-splash2-energydrinkslist {
+        top: 10rem;
+        background-position-x: 20rem;
     }
 }
 

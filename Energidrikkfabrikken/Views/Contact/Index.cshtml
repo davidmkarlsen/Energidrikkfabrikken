@@ -1,0 +1,88 @@
+@model ContactInput
+@{
+    ViewData["Title"] = "Kontakt oss";
+}
+
+<div class="contact-wrapper">
+    <div class="contact--info-wrapper">
+        <div class="contact--info--title-wrapper">
+            <img class="contact--info--title--img" src="svg/hello-icon.svg" alt="kontakt oss ikon"/>
+            <h1 class="contact--info--title--h1">Noe du lurer på?</h1>
+        </div>
+        <p class="contact--info--p">Ikke nøl med å kontakte oss, vi vil gjerne høre fra deg!<br/>
+            Fyll ut kontaktskjemaet, eller se kontaktinformasjon for å nå oss.
+        </p>
+        
+        
+        <a href="#contactInfoP" class="contact--info--to-forms-btn">
+            Se kontaktskjema
+        </a>
+        
+        <h2 class="contact--info--h2">Vår kontaktinformasjon</h2>
+        <div class="contact--info--contact-wrapper">
+            <div class="contact--info--contact--object">
+                <span class="contact--info--contact--object--title">Telefon:</span>
+                <span>+47 42 35 24 25</span>
+            </div>
+            <div class="contact--info--contact--object">
+                <span class="contact--info--contact--object--title">Email:</span>
+                <span>kontakt@edfabrikken.no</span>
+            </div>
+            <div class="contact--info--contact--object">
+                <span class="contact--info--contact--object--title">Adresse:</span>
+                <span>0195 OSLO</span>
+                <span>Kongehusgata 42</span>
+                <span>Energifabrikken AS</span>
+            </div>
+        </div>
+        
+        <h2 class="contact--info--h2">Ønsker du å møte oss?</h2>
+        <p class="contact--info--p" id="contactInfoP">Dersom du ønsker å avtale møte med oss, ta kontakt via kontaktskjema, mail, eller telefon. Vi svarer innen 2 virkedager.</p>
+    </div>
+    <form method="post">
+        <div class="contact--form-wrapper">
+            <div class="contact--form--grid-wrapper">
+                <div class="contact--form--grid--object firstname-input">
+                    <label asp-for="FirstName" class="contact--form--grid--label"></label>
+                    <input asp-for="FirstName" type="text" class="contact--form--grid--input">
+                    <span asp-validation-for="FirstName" class="contact--form--grid--input-validation"></span>
+                </div>
+                <div class="contact--form--grid--object lastname-input">
+                    <label asp-for="LastName" class="contact--form--grid--label"></label>
+                    <input asp-for="LastName" type="text" class="contact--form--grid--input">
+                    <span asp-validation-for="LastName" class="contact--form--grid--input-validation"></span>
+                </div>
+                <div class="contact--form--grid--object email-input">
+                    <label asp-for="Email" class="contact--form--grid--label"></label>
+                    <input asp-for="Email" type="text" class="contact--form--grid--input">
+                    <span asp-validation-for="Email" class="contact--form--grid--input-validation"></span>
+                </div>
+                <div class="contact--form--grid--object postnumber-input">
+                    <label asp-for="PostNumber" class="contact--form--grid--label"></label>
+                    <input asp-for="PostNumber" type="number" minlength="4" maxlength="4" class="contact--form--grid--input">
+                    <span asp-validation-for="PostNumber" class="contact--form--grid--input-validation"></span>
+                </div>
+                <div class="contact--form--grid--object county-input">
+                    <label asp-for="County" class="contact--form--grid--label"></label>
+                    <input asp-for="County" type="text" class="contact--form--grid--input">
+                    <span asp-validation-for="County" class="contact--form--grid--input-validation"></span>
+                </div>
+                <div class="contact--form--grid--object streetaddress-input">
+                    <label asp-for="StreetAddress" class="contact--form--grid--label"></label>
+                    <input asp-for="StreetAddress" type="text" class="contact--form--grid--input">
+                    <span asp-validation-for="StreetAddress" class="contact--form--grid--input-validation"></span>
+                </div>
+                <div class="contact--form--grid--object message-input">
+                    <label asp-for="Message" class="contact--form--grid--label"></label>
+                    <textarea asp-for="Message" cols="30" rows="5" class="contact--form--grid--input"></textarea>
+                    <span asp-validation-for="Message" class="contact--form--grid--input-validation"></span>
+                </div>
+            </div>
+            <p class="contact--form--p">Skjemaet blir sendt som en mail videre til oss i Energidrikkfabrikken. Vi svarer innen 2 virkedager.</p>
+            <button class="contact--form--submit-btn" type="submit">
+                Send
+                <img src="svg/right-icon-white.svg" alt="send kontaktskjema ikon"/>
+            </button>
+        </div>
+    </form>
+</div>
