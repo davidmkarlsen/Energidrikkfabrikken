@@ -1,0 +1,74 @@
+@model List<EnergyIngredientVm>
+@{
+    ViewData["Title"] = "Energidrikk";
+}
+
+<div>
+    <a asp-controller="EnergydrinksList" asp-action="Index">
+        <button class="back-btn">
+            <img src="svg/left-icon-white.svg" alt="tilbakeknapp ikon"/>
+            Tilbake
+        </button>
+    </a>
+    <div class="energydrink-wrapper">
+        <div class="energydrink-about-wrapper">
+            <div class="energydrink-about--back-wrapper">
+                <h1 class="energydrink-title">
+                    @Model[0].Energydrink.Name
+                </h1>
+                <div class="energydrink-highlights-wrapper">
+                    <div class="energydrink-highlights--highlight">
+                        0.5 l
+                    </div>
+                    <div class="energydrink-highlights--highlight">
+                        0.33 l
+                    </div>
+                    <div class="energydrink-highlights--highlight">
+                        Sukkerfri
+                    </div>
+                    <div class="energydrink-highlights--highlight">
+                        Tropisk
+                    </div>
+                </div>
+                <div class="energydrink-info-wrapper">
+                    <h2 class="energydrink-info--title">Om produktet</h2>
+                    <p class="energydrink-info--p">
+                        @Model[0].Energydrink.About
+                    </p>
+                </div>
+                <h2 class="energydrink-nutrition-table--title">Næringsinnhold</h2>
+                <table class="energydrink-nutrition-table">
+                    <tr class="energydrink-nutrition-table--th-row">
+                        <th>Innhold</th>
+                        <th>Mengde</th>
+                    </tr>
+                    @foreach (var obj in Model)
+                    {
+                        <tr>
+                            <td>@obj.Ingredient.Name</td>
+                            <td>@obj.Amount</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+        <div class="energydrink-img-wrapper">
+            <img class="energydrink-img-wrapper--img" src="images/@Model[0].Energydrink.ImageURL" alt="@Model[0].Energydrink.Name bilde">
+            <div class="energydrink-img-wrapper--background"></div>
+        </div>
+        <!--
+        @foreach (var obj in Model)
+        {
+            <h2>@obj.Ingredient.Name</h2>
+        }
+        -->
+    </div>
+    <div class="energy-background-wrapper">
+        <div class="energy-background-wrapper--object"></div>
+        <div class="energy-background-wrapper--object-between"></div>
+        <div class="energy-background-wrapper--object"></div>
+        <div class="energy-background-wrapper--object-between"></div>
+        <div class="energy-background-wrapper--object"></div>
+        <div class="energy-background-wrapper--object-between"></div>
+    </div>
+</div>

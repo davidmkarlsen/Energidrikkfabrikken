@@ -1,0 +1,178 @@
+@import "site.css";
+
+.energylist-top-banner {
+    padding: 1em 2em;
+    color: var(--white);
+    margin: 0 -1em;
+    background-image: url("../images/energylist-banner-back.png");
+    background-size: cover;
+    background-position-y: center;
+}
+
+.energylist-top-banner--title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+.energylist-top-banner--info {
+    line-height: 1.5;
+    max-width: 50rem;
+}
+
+.energylist-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 3em;
+    width: 100%;
+    margin-top: 4em;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+.energylist-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--light-blue);
+    padding: 1em;
+    border-radius: 0.3rem;
+    max-width: 25rem;
+    margin: auto;
+}
+
+.energylist-item--title {
+    margin: 0.5em 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.energylist-item--img-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.energylist-item--img-container--img {
+    object-fit: contain;
+    width: 100%;
+    max-width: 10rem;
+}
+
+.energylist-item--btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0.5em;
+    border-radius: 0.3rem;
+    width: 100%;
+}
+
+.energylist-item--btn img{
+    align-self: center;
+}
+
+.coming-soon-wrapper {
+    padding: 6em 3em;
+    width: 100%;
+    height: 100%;
+    background-color: var(--text-color);
+    color: white;
+    align-items: center;
+    position: relative;
+    min-height: 23rem
+}
+
+.coming-soon-wrapper--icon {
+    width: 4.5rem;
+    margin: 0 auto;
+}
+
+.coming-soon-wrapper--title {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 0.5em 0 0 0;
+    text-align: center;
+}
+
+.coming-soon-wrapper--btn {
+    position: absolute;
+    bottom: 1em;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 1em;
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+    left: 1em;
+    right: 1em;
+    color: var(--white);
+    font-weight: 500;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .energylist-wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .energylist-item--btn {
+        width: 100%
+    }
+
+    .energylist-top-banner {
+        margin: 0;
+        border-radius: 0.3em;
+    }
+
+    .energylist-top-banner--title {
+        margin-top: 2em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .energylist-wrapper {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 3em;
+    }
+
+    .energylist-item--btn {
+        padding: 0.75em;
+    }
+
+    .coming-soon-wrapper--title {
+        font-size: 1.2rem;
+    }
+
+    .coming-soon-wrapper--btn {
+        padding: 0.8em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .energylist-wrapper {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 4em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

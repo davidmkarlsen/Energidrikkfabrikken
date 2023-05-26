@@ -18,7 +18,7 @@
 }
 
 .carousel img {
-    width: calc(100% / 1);
+    width: 100%;
     object-fit: cover;
     border-radius: 0.3rem;
 }
@@ -125,7 +125,7 @@
 
 .about-and-socials-wrapper p {
     line-height: 1.6;
-}
+}   
 
 .socials-wrapper {
     display: flex;
@@ -194,10 +194,6 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .home-container {
-        margin-top: 3em;
-    }
-    
     .carousel img {
         width: calc(96% / 3)
     }
@@ -208,13 +204,14 @@
     }
 
     .energy-feature-img {
-        max-width: 30rem;
+        max-width: 35rem;
         width: 45%;
-        margin-left: 1.5em;
+        margin:0 0 0 1em;
     }
     
     .features-wrapper {
-        width: 50%
+        width: 50%;
+        margin: auto 0 auto auto;
     }
 
     .lower-section {

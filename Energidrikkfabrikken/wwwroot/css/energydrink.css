@@ -1,0 +1,265 @@
+.back-btn {
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1em;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.3em
+}
+
+.energy-background-wrapper {
+    position: absolute;
+    max-width: 100vw;
+    max-height: 100vh;
+    left: 0;
+    top: 4em;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: -1;
+    mix-blend-mode: soft-light;
+}
+
+.energy-background-wrapper--object, .energy-background-wrapper--object-between{
+    height: 15rem;
+    width: 100vw;
+    background: url("../images/energy-pattern.png") repeat-x;
+    background-size: cover;
+}
+
+.energy-background-wrapper--object {
+    animation: slide 780s linear infinite;
+}
+
+.energy-background-wrapper--object-between {
+    animation: slide-reverse 780s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 6690px;
+    }
+}
+
+@keyframes slide-reverse {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -6690px;
+    }
+}
+
+.energy-background-wrapper--img {
+    width: 10rem;
+    height: 4rem;
+}
+
+.energydrink-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.energydrink-about-wrapper {
+    width: calc(100% + 2em);
+    position: relative;
+    overflow: hidden;
+    margin: 0 -1em;
+    
+}
+
+.energydrink-about--back-wrapper {
+    width: 100%;
+    background-color: var(--light-blue);
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.energydrink-title {
+    font-size: 2.6rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.energydrink-highlights-wrapper {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-top: -1em;
+}
+
+.energydrink-highlights--highlight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 1em 1.3em;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+}
+
+.energydrink-info-wrapper {
+    background-color: var(--text-color);
+    color: var(--white);
+    padding: 1.5em 1em;
+    border-radius: 0.3rem;
+}
+
+.energydrink-info--title {
+    margin: 0;
+    font-weight: 500;
+}
+
+.energydrink-info--p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.energydrink-nutrition-table--title {
+    margin: 0 0 -0.5em 0;
+}
+
+.energydrink-nutrition-table {
+    background-color: var(--white);
+    border-radius: 0.3rem;
+    border-spacing:0;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.energydrink-nutrition-table th, .energydrink-nutrition-table td {
+    gap: 0;
+    margin: 0;
+    padding: 0.6em 1em;
+    text-align: left;
+}
+
+.energydrink-nutrition-table th {
+    padding: 0.75em 1em;
+}
+
+.energydrink-nutrition-table--th-row {
+    background-color: var(--secondary-color);
+}
+
+.energydrink-img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 3em;
+    max-height: 35rem;
+    align-self: center;
+    max-width: 25rem;
+}
+
+.energydrink-img-wrapper--img {
+    min-height: 30rem;
+    max-height: 40rem;
+    object-fit: contain;
+}
+
+.energydrink-img-wrapper--background {
+    background-color: var(--white);
+    position: absolute;
+    bottom: 0;
+    top: 10em;
+    width: 100%;
+    z-index: -1;
+    border-radius: 0.3rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .energydrink-wrapper {
+        flex-direction: row;
+        gap: 5%;
+    }
+
+    .energydrink-about-wrapper {
+        width: 60%;
+        margin: 0;
+    }
+
+    .energydrink-about--back-wrapper {
+        max-width: 35rem;
+        padding: 2em 2.5em;
+        border-radius: 0.3rem;
+        gap: 2.5em;
+    }
+
+    .energydrink-title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 2.8rem;
+    }
+
+    .energydrink-highlights-wrapper {
+        margin-top: -1.5em;
+    }
+
+    .energydrink-highlights--highlight {
+        padding: 0.75em 2em;
+        font-size: 1.1rem;
+    }
+    
+    .energydrink-info-wrapper {
+        margin: 0;
+        padding: 1.5em;
+    }
+
+    .energydrink-nutrition-table--title {
+        margin: 0 0 -1em 0;
+    }
+
+    .energydrink-img-wrapper {
+        max-height: 43rem;
+        max-width: 35%;
+        margin: 0 0 0 auto;
+    }
+
+    .energydrink-img-wrapper--img {
+        height: 40rem;
+    }
+
+    .energydrink-img-wrapper--img
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .energydrink-highlights-wrapper {
+        margin: -1.5em -8em 0 2em;
+    }
+
+    .energydrink-info-wrapper {
+        margin: 0 -8em 0 2em;
+    }
+}

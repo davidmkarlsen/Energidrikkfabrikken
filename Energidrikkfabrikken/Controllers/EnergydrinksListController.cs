@@ -16,6 +16,7 @@ public class EnergydrinksListController : Controller
     public IActionResult Index()
     {
         List<Energydrink> objEnergydrinksList = _db.Energydrinks.ToList();
+        
         return View(objEnergydrinksList);
     }
 }
