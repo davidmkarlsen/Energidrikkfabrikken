@@ -9,5 +9,5 @@ public class Category
     [Required]
     public string Name { get; set; }
     
-    public ICollection<Energydrink> Energydrinks { get; set; }
+    public ICollection<EnergyCategoryVm> EnergyCategories { get; set; }
 }

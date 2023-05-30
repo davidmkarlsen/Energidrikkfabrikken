@@ -4,34 +4,37 @@
 
 <div class="home-container">
     <div class="carousel-wrapper">
-        <button class="carousel-navigator-left">
+        <button class="carousel-navigator-left" id="carouselLeftBtn">
             <img src="svg/left-icon-white.svg" alt="venstre_ikon">
         </button>
-        <button class="carousel-navigator-right">
+        <button class="carousel-navigator-right" id="carouselRightBtn">
             <img src="svg/right-icon-white.svg" alt="høyre_ikon">
         </button>
-        <div class="carousel">
-            <img src="images/carousel-img1.png" alt="energidrikkfarbikken_highlight_bilde"/>
+        <div class="carousel" id="carousel">
+            <img id="carouselImg1" src="images/carousel-img1.png" alt="energidrikkfarbikken_highlight_bilde"/>
             <img src="images/carousel-img2.png" alt="energidrikkfarbikken_highlight_bilde"/>
             <img src="images/carousel-img3.png" alt="energidrikkfarbikken_highlight_bilde"/>
             <img src="images/carousel-img4.png" alt="energidrikkfarbikken_highlight_bilde"/>
             <img src="images/carousel-img1.png" alt="energidrikkfarbikken_highlight_bilde"/>
+            <img src="images/carousel-img2.png" alt="energidrikkfarbikken_highlight_bilde"/>
+            <img src="images/carousel-img3.png" alt="energidrikkfarbikken_highlight_bilde"/>
+            <img src="images/carousel-img4.png" alt="energidrikkfarbikken_highlight_bilde"/>
         </div>
     </div>
     <div class="mid-section">
         <img class="energy-feature-img" src="images/energy-group.png" alt="energidrikk_trio">
         <div class="features-wrapper">
-            <div class="feature">
+            <div class="feature box-shadow">
                 <img src="svg/candy-icon.svg" alt="smak_ikon">
                 <h3>Original smak</h3>
                 <p>7 unike energidrikker med hver sin smak for å gjøre alt mer spennende</p>
             </div>
-            <div class="feature">
+            <div class="feature box-shadow">
                 <img src="svg/no-sugar-icon.svg" alt="uten_sukker_ikon">
                 <h3>100% Sukkerfri</h3>
                 <p>Våre energidrikker er helt uten sukker, og inneholder vitamin B3, B6 og B12</p>
             </div>
-            <div class="feature">
+            <div class="feature box-shadow">
                 <img src="svg/pulse-icon.svg" alt="puls_ikon">
                 <h3>Maks ytelse</h3>
                 <p>Med innhold av kalsium, elektrolytter og koffein vil du få maks ut av det du vil gjøre</p>
@@ -39,7 +42,7 @@
         </div>
     </div>
     <div class="lower-section">
-        <div class="about-wrapper">
+        <div class="about-wrapper box-shadow">
             <h1>Vi er <br> Energidrikk-fabrikken.</h1>
             <div class="about-and-socials-wrapper">
                 <p>
@@ -48,27 +51,36 @@
                     Klar for å erobre dagen med en enestående opplevelse? Sjekk ut våre energidrikker og bli blåst bort av vår unike energi!
                 </p>
                 <div class="socials-wrapper">
-                    <button class="social-btn">
+                    <button class="social-btn box-shadow2">
                         <img src="svg/twitter-icon.svg" alt="facebook_ikon"/>
                     </button>
-                    <button class="social-btn">
+                    <button class="social-btn box-shadow2">
                         <img src="svg/instagram-icon.svg" alt="facebook_ikon"/>                  
                     </button>
-                    <button class="social-btn">
+                    <button class="social-btn box-shadow2">
                         <img src="svg/facebook-icon.svg" alt="facebook_ikon"/>
                     </button>
                 </div>
             </div>
         </div>
-        <button class="lower-section--btn">
-            <div class="lower-section--btn--title">Våre energidrikker</div>
-            <img src="svg/right-icon.svg" alt="forsett_ikon"/>
-        </button>
-        <button class="lower-section--btn">
-            <div class="lower-section--btn--title">Kontakt oss</div>
-            <img src="svg/right-icon.svg" alt="forsett_ikon"/>
-        </button>
+        <a asp-controller="EnergydrinksList" asp-action="Index">
+            <button class="lower-section--btn box-shadow">
+                <div class="lower-section--btn--title">Våre energidrikker</div>
+                <img src="svg/right-icon.svg" alt="forsett_ikon"/>
+            </button>
+        </a>
+        <a asp-controller="Contact" asp-action="Index">
+            <button class="lower-section--btn box-shadow">
+                <div class="lower-section--btn--title">Kontakt oss</div>
+                <img src="svg/right-icon.svg" alt="forsett_ikon"/>
+            </button>
+        </a>
     </div>
 </div>
 <div class="background-splash1"></div>
 <div class="background-splash2"></div>
+
+@section Scripts {
+    <script src="~/js/homeCarousel.js"></script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

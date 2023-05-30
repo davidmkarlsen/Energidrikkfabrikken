@@ -12,6 +12,9 @@ public class ApplicationDbContext : DbContext
     
     public DbSet<Category> Categories { get; set; }
     public DbSet<Energydrink> Energydrinks { get; set; }
+    
+    public DbSet<EnergyCategoryVm> EnergyCategoryVm { get; set; }
+
     public DbSet<Ingredient> Ingredients { get; set; }
     public DbSet<ContactInput> ContactInputs { get; set; }
     public DbSet<EnergyIngredientVm> EnergyIngredientVm { get; set; }

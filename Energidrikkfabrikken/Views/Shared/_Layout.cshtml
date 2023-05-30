@@ -33,13 +33,13 @@
                             Hjem
                         </li>
                     </a>
-                    <a class="" asp-controller="Contact" asp-action="Index">
+                    <a asp-controller="Contact" asp-action="Index">
                         <li class="nav--links--list--item white-list-item">
                             <img src="svg/email-ikon.svg" alt="email_ikon"/>
                             Kontakt oss
                         </li>
                     </a>
-                    <a class="" asp-controller="EnergydrinksList" asp-action="Index">
+                    <a asp-controller="EnergydrinksList" asp-action="Index">
                         <li class="nav--links--list--item">
                             <img src="svg/energidrikk-ikon.svg" alt="energidrikk_ikon"/>
                             Våre energidrikker
@@ -56,8 +56,15 @@
                     <table class="shopping-cart--content--table" id="shoppingCartTable">
                         
                     </table>
-                    <button class="shopping-cart--content--order-btn" id="orderBtn">Bestill nå</button>
-                    <h3 id="emptyShoppingCartText">Handlekurven din er tom.</h3>
+                    <button class="shopping-cart--content--order-btn box-shadow2" id="orderBtn" onclick="toggleFeedback('confirmOrder')">Bestill nå</button>
+                    <h3 class="shopping-cart--content--h3" id="emptyShoppingCartText">Handlekurven din er tom.</h3>
+                </div>
+            </div>
+            <div class="feedback-wrapper" id="feedbackWrapper">
+                <img class="feedback--img" src="svg/success-icon.svg" alt="suksess ikon"/>
+                <div class="feedback--text-wrapper">
+                    <h2 class="feedback--text--h3" id="feedbackTitle">Gratulerer</h2>
+                    <p class="feedback--text--p" id="feedbackParagraph">Du har fullført</p>
                 </div>
             </div>
         </div>
@@ -77,6 +84,7 @@
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
 <script src="~/js/index.js"></script>
+<script src="~/js/feedback.js"></script>
 @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

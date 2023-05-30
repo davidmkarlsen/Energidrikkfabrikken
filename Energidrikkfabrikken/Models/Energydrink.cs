@@ -10,7 +10,7 @@ public class Energydrink
     public string Name { get; set; }
     
     [Required]
-    public Category Category { get; set; }
+    public ICollection<EnergyCategoryVm> EnergyCategories { get; set; }
     
     [Required]
     public string About { get; set; }

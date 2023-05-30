@@ -4,7 +4,7 @@
 }
 
 <div>
-    <div class="energylist-top-banner">
+    <div class="energylist-top-banner box-shadow">
         <h1 class="energylist-top-banner--title">Våre energidrikker</h1>
         <p class="energylist-top-banner--info">
             Her ser du en overikt over våre 7 ulike smakfulle energidrikker. Vi er godt i gang med å utvikle nye og spennende smaker.
@@ -14,23 +14,23 @@
     <div class="energylist-wrapper">
         @foreach (var obj in Model)
         {
-            <div class="energylist-item">
+            <div class="energylist-item box-shadow">
                 <div class="energylist-item--img-container">
                     <img class="energylist-item--img-container--img" src="images/@obj.ImageURL" alt="@obj.Name bilde"/>
                 </div>
                 <h3 class="energylist-item--title">@obj.Name</h3>
                 <a asp-controller="Energydrink" asp-route-energydrinkId="@obj.EnergydrinkId" asp-action="Index">
-                    <button class="energylist-item--btn">
+                    <button class="energylist-item--btn box-shadow2">
                         Se mer
                         <img src="svg/right-icon-white.svg" alt="Se mer ikon"/>
                     </button>
                 </a>
             </div>
         }
-        <div class="energylist-item coming-soon-wrapper">
+        <div class="energylist-item coming-soon-wrapper box-shadow">
             <img class="coming-soon-wrapper--icon" src="svg/timer-icon.svg" alt="kommer snart ikon">
             <h3 class="coming-soon-wrapper--title">Nye produkter på vei</h3>
-            <button class="coming-soon-wrapper--btn">Oppdater meg</button>
+            <button class="coming-soon-wrapper--btn box-shadow2" onclick="toggleFeedback('updateCustomer')">Oppdater meg</button>
         </div>
     </div>
 </div>

@@ -1,9 +1,8 @@
 //Gir funksjon til 'Legg til handlekurv' seksjon for hvert produkt
-let productQuantityNumberMinusBtn = document.getElementById("productQuantityNumberMinusBtn") as HTMLButtonElement;
-let productQuantityNumberPlusBtn = document.getElementById("productQuantityNumberPlusBtn") as HTMLButtonElement;
-let productQuantityNumberInput = document.getElementById("productQuantityNumberInput") as HTMLInputElement;
-let addToCartBtn = document.getElementById("addToCartBtn") as HTMLButtonElement;
-let shoppingCartCounter = document.getElementById("shoppingCartCounter") as HTMLSpanElement;
+const productQuantityNumberMinusBtn = document.getElementById("productQuantityNumberMinusBtn") as HTMLButtonElement;
+const productQuantityNumberPlusBtn = document.getElementById("productQuantityNumberPlusBtn") as HTMLButtonElement;
+const productQuantityNumberInput = document.getElementById("productQuantityNumberInput") as HTMLInputElement;
+const shoppingCartCounter = document.getElementById("shoppingCartCounter") as HTMLSpanElement;
 
 productQuantityNumberPlusBtn.addEventListener('click', addProductQuantity);
 productQuantityNumberMinusBtn.addEventListener('click', subtractProductQuantity);
@@ -51,6 +50,8 @@ function addToCart(productId, productName, productPrice) {
             }
         }
     }
+
+    toggleFeedback("addToCart");
     
     shoppingCartCounter.innerHTML = `(${shoppingCartInfo.totalProducts})`;
     

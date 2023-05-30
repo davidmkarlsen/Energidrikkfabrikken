@@ -69,6 +69,8 @@
 
     <ItemGroup>
       <TypeScriptCompile Include="wwwroot\typeScript\energydrink.ts" />
+      <TypeScriptCompile Include="wwwroot\typeScript\feedback.ts" />
+      <TypeScriptCompile Include="wwwroot\typeScript\homeCarousel.ts" />
       <TypeScriptCompile Include="wwwroot\typeScript\index.ts" />
     </ItemGroup>
 

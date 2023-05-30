@@ -3,7 +3,6 @@ const navLinksEl = document.getElementById("navLinks");
 const navBurgerEl = document.getElementById("navBurger");
 
 let isNavLinksOpen = false;
-
 function toggleNavLinks() {
     if(navLinksEl.style.display === "none") {
         navLinksEl.style.display = "block";
@@ -16,6 +15,7 @@ function toggleNavLinks() {
     checkScrollPosition()
 }
 
+//Endrer visning av burger element basert på skjermstørrelse
 function checkWindowWidth() {
     if(window.innerWidth > 768) {
         navBurgerEl.style.display = "none";
@@ -30,7 +30,7 @@ checkWindowWidth();
 
 window.onresize = checkWindowWidth;
 
-const navbarEl = document.getElementById("navbar");
+let navbarEl = document.getElementById("navbar");
 
 function checkScrollPosition() {
     if(window.scrollY === 0 && !isNavLinksOpen) {
@@ -45,7 +45,6 @@ function checkScrollPosition() {
 checkScrollPosition()
 
 window.onscroll = checkScrollPosition;
-
 
 interface EnergydrinkProduct {
     id: number;
@@ -63,7 +62,7 @@ let shoppingCartInfo = {
 }
 
 //Legger til handlekurv element i navbaren
-let navLinksListEl = document.getElementById("navLinksList");
+const navLinksListEl = document.getElementById("navLinksList");
 
 let newLinkEl = document.createElement("a");
 newLinkEl.addEventListener('click', toggleShoppingCart);
@@ -85,7 +84,7 @@ newLinkEl.append(newLiEl)
 
 navLinksListEl.append(newLinkEl);
 
-let shoppingCartEl = document.getElementById("shoppingCart");
+const shoppingCartEl = document.getElementById("shoppingCart");
 
 let shoppingCartDisplay = false;
 
@@ -105,9 +104,10 @@ function toggleShoppingCart() {
     }
 }
 
-let shoppingCartTable = document.getElementById("shoppingCartTable");
-let orderBtn = document.getElementById("orderBtn");
-let emptyShoppingCartText = document.getElementById("emptyShoppingCartText");
+const shoppingCartTable = document.getElementById("shoppingCartTable");
+const orderBtn = document.getElementById("orderBtn");
+const emptyShoppingCartText = document.getElementById("emptyShoppingCartText");
+
 function loadShoppingCartContent() {
     if(shoppingCart.length > 0) {
         shoppingCartTable.innerHTML = "";

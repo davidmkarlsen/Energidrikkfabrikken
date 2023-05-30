@@ -48,14 +48,23 @@ button:active {
   color: #B6D4F4;
 }
 
+.box-shadow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.box-shadow2 {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
 .navbar {
   width: 100%;
   position: fixed;
   top: 0;
   display: flex;
-  background-color: var(--secondary-blue);
+  background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0;
   z-index: 1;
+  transition: background-color 0.1s ease-in-out;
 }
 
 .nav--container {
@@ -226,6 +235,42 @@ button:active {
   border-radius: 0.3rem;
 }
 
+.shopping-cart--content--h3 {
+  font-weight: 600;
+}
+
+.feedback-wrapper {
+  position: absolute;
+  top: 4.4rem;
+  right: 0;
+  width: 100%;
+  background-color: var(--light-blue);
+  padding: 1em;
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0;
+  visibility: hidden;
+  display: flex;
+  gap: 1em;
+}
+
+.feedback--img {
+  width: 3rem;
+}
+
+.feedback--text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.feedback--text--h3 {
+  font-size: 1.2rem;
+}
+
+.feedback--text--h3, .feedback--text--p {
+  margin: 0;
+}
+
 
 body {
   margin: 0;
@@ -319,16 +364,23 @@ body {
   }
 
 
-  .shopping-cart-wrapper {
+  .shopping-cart-wrapper, .feedback-wrapper {
     position: absolute;
     top: 5.7rem;
     right: 1em;
     left: 1em;
     margin-left: auto;
-    max-width: 40rem;
     border-radius: 0.3rem;
     padding: 1.5em;
+  }
+
+  .shopping-cart-wrapper {
+    max-width: 40rem;
     transition: visibility 0.3s ease-in-out ;
+  }
+
+  .feedback-wrapper {
+    max-width: 25rem;
   }
 
   .background-splash1 {
@@ -376,5 +428,27 @@ body {
 @keyframes noDisplay {
   to { filter: opacity(0);}
   from { filter: opacity(0);}
+}
+
+@keyframes feedbackAnimation {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  15% {
+    visibility: visible;
+    opacity: 100%;
+  }
+
+  85% {
+    visibility: visible;
+    opacity: 100%;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 

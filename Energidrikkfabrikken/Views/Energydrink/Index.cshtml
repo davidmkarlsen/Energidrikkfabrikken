@@ -1,65 +1,69 @@
 @model List<EnergyIngredientVm>
 @{
-    ViewData["Title"] = "Energidrikk";
+    ViewData["Title"] = @Model[0].Energydrink.Name;
 }
 
 <div>
     <a asp-controller="EnergydrinksList" asp-action="Index">
-        <button class="back-btn">
+        <button class="back-btn box-shadow2">
             <img src="svg/left-icon-white.svg" alt="tilbakeknapp ikon"/>
             Tilbake
         </button>
     </a>
     <div class="energydrink-wrapper">
         <div class="energydrink-about-wrapper">
-            <div class="energydrink-about--back-wrapper">
+            <div class="energydrink-about--back-wrapper box-shadow">
                 <h1 class="energydrink-title">
                     @Model[0].Energydrink.Name
                 </h1>
                 <div class="energydrink-highlights-wrapper">
                     @if(Model[0].Energydrink.AvailableInBigSize)
                     {
-                        <div class="energydrink-highlights--highlight">
+                        <div class="energydrink-highlights--highlight box-shadow2">
                             0.5 l
                         </div>
                     }
                     @if (Model[0].Energydrink.AvailableInSmallSize)
                     {
-                        <div class="energydrink-highlights--highlight">
+                        <div class="energydrink-highlights--highlight box-shadow2">
                             0.33 l
                         </div>
                     }
                     @if (Model[0].Energydrink.IsSugarFree)
                     {
-                        <div class="energydrink-highlights--highlight">
+                        <div class="energydrink-highlights--highlight box-shadow2">
                             Sukkerfri
                         </div>
                     }
-                    <div class="energydrink-highlights--highlight">
-                        @Model[0].Energydrink.Category.Name
+                    <div class="energydrink-highlights--highlight box-shadow2">
+                        @Model[0].Energydrink.EnergyCategories.ToList()[0].Category.Name
                     </div>
                 </div>
                 <div class="energydrink-addtocart-wrapper">
-                    <div class="energydrink-addtocart--trio-btns">
+                    <div class="energydrink-addtocart--trio-btns box-shadow2">
                         <button class="energydrink-addtocart--trio-btns--minus" id="productQuantityNumberMinusBtn">-</button>
                         <input class="energydrink-addtocart--trio-btns--number" type="number" min="0" value="1" id="productQuantityNumberInput">
                         <button class="energydrink-addtocart--trio-btns--plus" id="productQuantityNumberPlusBtn">+</button>
                     </div>
-                    <button class="energydrink-addtocart--btn" id="addToCartBtn" onclick="addToCart(@Model[0].Energydrink.EnergydrinkId, '@Model[0].Energydrink.Name', @Model[0].Energydrink.Price)">
+                    <button class="energydrink-addtocart--btn box-shadow2" id="addToCartBtn" onclick="addToCart(@Model[0].Energydrink.EnergydrinkId, '@Model[0].Energydrink.Name', @Model[0].Energydrink.Price)">
                         Legg i handlekurv
                     </button>
                 </div>
-                <div class="energydrink-info-wrapper">
+                <div class="energydrink-info-wrapper box-shadow">
                     <h2 class="energydrink-info--title">Om produktet</h2>
                     <p class="energydrink-info--p">
                         @Model[0].Energydrink.About
                     </p>
                 </div>
                 <h2 class="energydrink-nutrition-table--title">Næringsinnhold</h2>
-                <table class="energydrink-nutrition-table">
+                <table class="energydrink-nutrition-table box-shadow2">
                     <tr class="energydrink-nutrition-table--th-row">
                         <th>Innhold</th>
                         <th>Mengde</th>
+                    </tr>
+                    <tr>
+                        <td>Energi / 100ml</td>
+                        <td>@Model[0].Energydrink.TotalKcalPer100Ml kcal</td>
                     </tr>
                     @foreach (var obj in Model)
                     {
@@ -73,7 +77,7 @@
         </div>
         <div class="energydrink-img-wrapper">
             <img class="energydrink-img-wrapper--img" src="images/@Model[0].Energydrink.ImageURL" alt="@Model[0].Energydrink.Name bilde">
-            <div class="energydrink-img-wrapper--background"></div>
+            <div class="energydrink-img-wrapper--background box-shadow"></div>
         </div>
         <!--
         @foreach (var obj in Model)

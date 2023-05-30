@@ -7,25 +7,26 @@
     <projectFile profileName="https">Energidrikkfabrikken/Energidrikkfabrikken.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe66eca-a48f-4fd4-99b7-365d4843b97d" name="Changes" comment="Kontakt skjema er laget, og det meste av styling er på plass.">
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/close-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/delete-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/shoppingcart-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/typeScript/energydrink.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/typeScript/index.ts" afterDir="false" />
+    <list default="true" id="abe66eca-a48f-4fd4-99b7-365d4843b97d" name="Changes" comment="Lag til mye TypeScript, og fikset en del CSS. Nå er det mulig å legge til produkter i handlekurv.">
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Models/EnergyCategoryVm.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/svg/success-icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/typeScript/feedback.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/typeScript/homeCarousel.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Energidrikkfabrikken/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Energidrikkfabrikken/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Controllers/EnergydrinkController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Controllers/EnergydrinkController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Data/ApplicationDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Energidrikkfabrikken.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Energidrikkfabrikken.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Models/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Models/Category.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Models/Energydrink.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Models/Energydrink.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Contact/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Contact/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Energydrink/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Energydrink/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Views/EnergydrinksList/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/EnergydrinksList/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Home/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/energydrink.css" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/energydrink.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/js/site.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/typeScript/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/typeScript/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/typeScript/energydrink.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/typeScript/energydrink.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/typeScript/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Energidrikkfabrikken/wwwroot/typeScript/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +57,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Energidrikkfabrikken/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/David/Desktop/dev/Energidrikkfabrikken/Energidrikkfabrikken/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/David/Desktop/dev/Energidrikkfabrikken/Energidrikkfabrikken/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,29 +71,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "RiderIisExpressOptionsPageId",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\JetBrains Rider 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;RiderIisExpressOptionsPageId&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\JetBrains Rider 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql",
-      "sqlserver"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;sqlserver&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\David\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\David\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\David\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\David\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\David\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\David\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Energidrikkfabrikken: http">
     <configuration name="Energidrikkfabrikken - IIS" type="IisApplication" factoryName="IisApplication">
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/Energidrikkfabrikken/Energidrikkfabrikken.csproj" />
@@ -169,7 +168,8 @@
       <workItem from="1684825678186" duration="34113000" />
       <workItem from="1685029037084" duration="532000" />
       <workItem from="1685031943574" duration="23557000" />
-      <workItem from="1685083007449" duration="60667000" />
+      <workItem from="1685083007449" duration="61040000" />
+      <workItem from="1685459693736" duration="10796000" />
     </task>
     <task id="LOCAL-00001" summary="Lagde riktig MVC prosjekt">
       <created>1684827090213</created>
@@ -216,7 +216,13 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1685129888978</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="Lag til mye TypeScript, og fikset en del CSS. Nå er det mulig å legge til produkter i handlekurv.">
+      <created>1685407665604</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1685407665604</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +277,7 @@
     <MESSAGE value="Lagt til info i databasen og får vist det i liste over energidrikker" />
     <MESSAGE value="Endret mye på css, og fått en produktside for hver energidrikk" />
     <MESSAGE value="Kontakt skjema er laget, og det meste av styling er på plass." />
-    <option name="LAST_COMMIT_MESSAGE" value="Kontakt skjema er laget, og det meste av styling er på plass." />
+    <MESSAGE value="Lag til mye TypeScript, og fikset en del CSS. Nå er det mulig å legge til produkter i handlekurv." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lag til mye TypeScript, og fikset en del CSS. Nå er det mulig å legge til produkter i handlekurv." />
   </component>
 </project>
