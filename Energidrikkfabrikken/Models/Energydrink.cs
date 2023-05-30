@@ -30,4 +30,6 @@ public class Energydrink
     public ICollection<EnergyIngredientVm> EnergyIngredients { get; set; }
     
     public string? ImageURL { get; set; }
+    
+    public int Price { get; set; }
 }

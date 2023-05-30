@@ -32,6 +32,7 @@ public class EnergydrinkController : Controller
             _db.EnergyIngredientVm
                 .Include(x => x.Ingredient)
                 .Include(x => x.Energydrink)
+                .ThenInclude(x => x.Category)
                 .ToList();
 
         List<EnergyIngredientVm> chosenEnergyIngredientList = new List<EnergyIngredientVm>();

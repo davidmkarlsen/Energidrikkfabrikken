@@ -33,10 +33,6 @@ a {
   color: var(--text-color);
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
 button {
   cursor: pointer;
   transition: transform 1000ms, filter 500ms;
@@ -48,13 +44,17 @@ button:hover, button:focus-visible {
   transition: transform 250ms, filter 250ms;
 }
 
+button:active {
+  color: #B6D4F4;
+}
+
 .navbar {
   width: 100%;
   position: fixed;
   top: 0;
   display: flex;
   background-color: var(--secondary-blue);
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0;
   z-index: 1;
 }
 
@@ -135,6 +135,98 @@ button:hover, button:focus-visible {
   font-weight: 500;
 }
 
+.shopping-cart-wrapper {
+  position: absolute;
+  top: 4.4rem;
+  right: 0;
+  width: 100%;
+  background-color: var(--light-blue);
+  padding: 1em;
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0;
+  display: none;
+}
+
+.shopping-cart--h2 {
+  font-weight: 600;
+  margin: 0.3em 0 0 0;
+}
+
+.shopping-cart-close--btn {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 1em;
+  right: 1em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+.shopping-cart-close--btn img {
+  width: 65%;
+}
+
+.shopping-cart--content {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.shopping-cart--content--table {
+  width: 100%;
+  border-spacing:0;
+}
+
+.shopping-cart--content--table tr {
+  
+}
+
+.shopping-cart--content--table th {
+  border-bottom: var(--secondary-blue) solid 0.1rem;
+  text-align: left;
+  padding: 0.7em 1em 0.7em 0;
+  width: 15%;
+}
+
+.shopping-cart--content--table th:first-of-type {
+  width: 40%;
+}
+
+.shopping-cart--content--table td {
+  padding: 0.7em 1em 0.7em 0;
+  font-weight: 500;
+}
+
+.shopping-cart--content--table--td-delete-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.shopping-cart--content--table--td-delete-btn img {
+  width: 1.3rem;
+}
+
+.shopping-cart--content--table--total-price-tr td {
+  border-top: var(--secondary-blue) solid 0.1rem;
+  font-weight: 600;
+  min-width: 4.1rem;
+}
+
+.shopping-cart--content--order-btn {
+  margin-top: 1em;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1em;
+  border-radius: 0.3rem;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -146,7 +238,6 @@ body {
   padding: var(--global-padding) var(--global-padding) 5em var(--global-padding);
   overflow: hidden;
 }
-
 
 .footer {
   padding: 3em var(--global-padding);
@@ -181,7 +272,7 @@ body {
   height: 20rem;
   position: absolute;
   top: 60rem;
-  right: 0rem;
+  right: 0;
   z-index: -1;
 }
 
@@ -193,7 +284,9 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
+  .shopping-cart--content--table th {
+    width: 20%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -223,6 +316,19 @@ body {
   .nav--links {
     background-color: transparent;
     width: auto;
+  }
+
+
+  .shopping-cart-wrapper {
+    position: absolute;
+    top: 5.7rem;
+    right: 1em;
+    left: 1em;
+    margin-left: auto;
+    max-width: 40rem;
+    border-radius: 0.3rem;
+    padding: 1.5em;
+    transition: visibility 0.3s ease-in-out ;
   }
 
   .background-splash1 {
@@ -271,3 +377,4 @@ body {
   to { filter: opacity(0);}
   from { filter: opacity(0);}
 }
+

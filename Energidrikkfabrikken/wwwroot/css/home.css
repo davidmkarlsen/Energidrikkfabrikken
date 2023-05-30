@@ -37,7 +37,6 @@
     background: rgba(244, 249, 255, 0.16);
     border: none;
     border-radius: 50%;
-    z-index: 2;
 }
 
 .carousel-navigator-left img, .carousel-navigator-right img {

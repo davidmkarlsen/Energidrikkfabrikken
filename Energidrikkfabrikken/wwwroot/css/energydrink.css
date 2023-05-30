@@ -19,7 +19,6 @@
     animation: 0.5s ease-in-out fadeIn reverse;
     position: absolute;
     max-width: 100vw;
-    max-height: 100vh;
     left: 0;
     top: 4em;
     bottom: 0;
@@ -116,6 +115,83 @@
     font-weight: 600;
     font-size: 1rem;
     border-radius: 0.4rem;
+}
+
+.energydrink-addtocart-wrapper {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.energydrink-addtocart--trio-btns--number {
+    width: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.energydrink-addtocart--trio-btns {
+    display: flex;
+    max-width: 10rem;
+}
+
+.energydrink-addtocart--trio-btns--minus, .energydrink-addtocart--trio-btns--plus {
+    padding: 0.5em 1em;
+    font-size: 1.2rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border: none;
+    font-weight: 500;
+}
+
+.energydrink-addtocart--trio-btns--minus:hover, .energydrink-addtocart--trio-btns--plus:hover, .energydrink-addtocart--btn:hover {
+    transform: translateY(0);
+}
+
+.energydrink-addtocart--trio-btns--minus {
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+
+.energydrink-addtocart--trio-btns--plus {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+.energydrink-addtocart--trio-btns--number {
+    border-radius: 0;
+    border: none;
+    border-top: #EBEFF4 solid 0.175rem;
+    border-bottom: #EBEFF4 solid 0.175rem;
+    padding: 0 1em;
+    text-align: center;
+    width: 3.5rem;
+    color: var(--text-color);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.energydrink-addtocart--trio-btns--number:focus {
+    border-top: #D1E0F2 solid 0.175rem;
+    border-bottom: #D1E0F2 solid 0.175rem;;
+    background-color: #FFF9F9;
+    outline: none;
+}
+
+.energydrink-addtocart--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .energydrink-info-wrapper {
@@ -268,6 +344,10 @@
 @media only screen and (min-width: 1200px) {
     .energydrink-highlights-wrapper {
         margin: -1.5em -8em 0 2em;
+    }
+    
+    .energydrink-addtocart-wrapper {
+        margin: 0 -8em 0 2em;
     }
 
     .energydrink-info-wrapper {

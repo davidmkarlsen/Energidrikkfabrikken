@@ -26,7 +26,7 @@
                 <img src="svg/burger-ikon.svg" alt="burger_ikon">
             </button>
             <div class="nav--links" id="navLinks">
-                <ul class="nav--links--list">
+                <ul class="nav--links--list" id="navLinksList">
                     <a asp-controller="Home" asp-action="Index">
                         <li class="nav--links--list--item">
                             <img src="svg/hjem-ikon.svg" alt="hjem_ikon"/>
@@ -47,6 +47,19 @@
                     </a>
                 </ul>
             </div>
+            <div class="shopping-cart-wrapper" id="shoppingCart">
+                <h2 class="shopping-cart--h2">Din handlekurv</h2>
+                <button class="shopping-cart-close--btn" onclick="toggleShoppingCart()">
+                    <img src="svg/close-icon.svg" alt="lukk handlekurv ikon">
+                </button>
+                <div class="shopping-cart--content" id="shoppingCartContent">
+                    <table class="shopping-cart--content--table" id="shoppingCartTable">
+                        
+                    </table>
+                    <button class="shopping-cart--content--order-btn" id="orderBtn">Bestill nå</button>
+                    <h3 id="emptyShoppingCartText">Handlekurven din er tom.</h3>
+                </div>
+            </div>
         </div>
     </nav>
 </header>
@@ -63,6 +76,7 @@
 </footer>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/index.js"></script>
 @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

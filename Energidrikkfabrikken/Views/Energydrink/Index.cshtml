@@ -17,18 +17,37 @@
                     @Model[0].Energydrink.Name
                 </h1>
                 <div class="energydrink-highlights-wrapper">
+                    @if(Model[0].Energydrink.AvailableInBigSize)
+                    {
+                        <div class="energydrink-highlights--highlight">
+                            0.5 l
+                        </div>
+                    }
+                    @if (Model[0].Energydrink.AvailableInSmallSize)
+                    {
+                        <div class="energydrink-highlights--highlight">
+                            0.33 l
+                        </div>
+                    }
+                    @if (Model[0].Energydrink.IsSugarFree)
+                    {
+                        <div class="energydrink-highlights--highlight">
+                            Sukkerfri
+                        </div>
+                    }
                     <div class="energydrink-highlights--highlight">
-                        0.5 l
+                        @Model[0].Energydrink.Category.Name
                     </div>
-                    <div class="energydrink-highlights--highlight">
-                        0.33 l
+                </div>
+                <div class="energydrink-addtocart-wrapper">
+                    <div class="energydrink-addtocart--trio-btns">
+                        <button class="energydrink-addtocart--trio-btns--minus" id="productQuantityNumberMinusBtn">-</button>
+                        <input class="energydrink-addtocart--trio-btns--number" type="number" min="0" value="1" id="productQuantityNumberInput">
+                        <button class="energydrink-addtocart--trio-btns--plus" id="productQuantityNumberPlusBtn">+</button>
                     </div>
-                    <div class="energydrink-highlights--highlight">
-                        Sukkerfri
-                    </div>
-                    <div class="energydrink-highlights--highlight">
-                        Tropisk
-                    </div>
+                    <button class="energydrink-addtocart--btn" id="addToCartBtn" onclick="addToCart(@Model[0].Energydrink.EnergydrinkId, '@Model[0].Energydrink.Name', @Model[0].Energydrink.Price)">
+                        Legg i handlekurv
+                    </button>
                 </div>
                 <div class="energydrink-info-wrapper">
                     <h2 class="energydrink-info--title">Om produktet</h2>
@@ -70,5 +89,14 @@
         <div class="energy-background-wrapper--object-between"></div>
         <div class="energy-background-wrapper--object"></div>
         <div class="energy-background-wrapper--object-between"></div>
+        <div class="energy-background-wrapper--object"></div>
+        <div class="energy-background-wrapper--object-between"></div>
+        <div class="energy-background-wrapper--object"></div>
+        <div class="energy-background-wrapper--object-between"></div>
     </div>
 </div>
+
+@section Scripts {
+    <script src="~/js/energydrink.js"></script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
